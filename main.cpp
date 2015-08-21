@@ -10,8 +10,10 @@ int main( int argc, char *argv[] )
     Login l;
     l.show();
 
-    //MainWindow w;
-    //w.show();
+    MainWindow w;
+    QObject::connect(&l, SIGNAL(finished(int)), &w, SLOT(showChat()));
+
+
 
     return a.exec();
 }

@@ -22,4 +22,5 @@ void Login::accept()
     Client::getInstance().init(loginName);
     Server::getInstance().init(loginName);
     Server::getInstance().run();
+    this->done(0);
 }

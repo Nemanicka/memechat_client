@@ -17,8 +17,11 @@ public:
     ~Login();
     virtual void accept();
 
+
 private:
     Ui::Login *ui;
+signals:
+    void destroyed();
 };
 
 #endif // LOGIN_H

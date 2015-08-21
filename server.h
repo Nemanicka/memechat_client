@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <map>
+#include <QTcpSocket>
 
 class Server : public QObject
 {

@@ -15,14 +15,16 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    client.cpp \
-    login.cpp \
-    server.cpp
+        client.cpp \
+        login.cpp \
+        server.cpp \
+        memetextedit.cpp
 
 HEADERS  += mainwindow.h \
             client.h \
-    login.h \
-    server.h
+            login.h \
+            server.h \
+            memetextedit.h
 
 FORMS    += mainwindow.ui \
     login.ui

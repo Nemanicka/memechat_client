@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "client.h"
+#include "memetextedit.h"
 
 namespace Ui {
 class MainWindow;
@@ -19,10 +20,13 @@ public:
 
 signals:
     void sendText(QString text);
+public slots:
+    void showChat();
 
 private:
     Ui::MainWindow *ui;
     Client* client;
+    MemeTextEdit* textEdit;
 };
 
 #endif // MAINWINDOW_H

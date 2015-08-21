@@ -34,7 +34,7 @@ void Server::run()
             qDebug("ok");
         }
 
-        QTcpSocket* clientSocket=tcpServer->nextPendingConnection();
+        QTcpSocket* clientSocket=server->nextPendingConnection();
         int idusersocs=clientSocket->socketDescriptor();
         SClients_[idusersocs]=clientSocket;
 //      connect(SClients_[idusersocs],SIGNAL(readyRead()),this, SLOT(slotReadClient()));
