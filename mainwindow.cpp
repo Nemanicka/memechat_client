@@ -16,8 +16,6 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->textEdit->setFocusPolicy(Qt::StrongFocus);
     ui->textBrowser->setFocusPolicy(Qt::NoFocus);
 
-//    client = new Client();
-
     QObject::connect(  this, SIGNAL( sendText(QString) ), ui->textBrowser, SLOT( append(QString) )  );
 
 }

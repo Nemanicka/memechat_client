@@ -4,15 +4,20 @@
 #include <QObject>
 #include <QtNetwork/QTcpSocket>
 #include <QtNetwork/QHostAddress>
+#include <memory>
 
-class Client
+class Client : public QObject
 {
     Q_OBJECT
-
 public:
-    Client();
+    void init(QString login);
+    static Client& getInstance();
+
 private:
-    QString clientName;
+    Client();
+
+    QString login_;
+    QString ip_;
 };
 
 #endif // CLIENT_H
